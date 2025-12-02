@@ -1,4 +1,4 @@
-package conceitosOO;
+package conceitosOO.emprese.data;
 
 public class Funcionario {
     
@@ -7,6 +7,15 @@ public class Funcionario {
     private String cargo;
     
     private int idade;
+
+    public Funcionario() {
+    }
+
+    protected Funcionario(String nome, String cargo, int idade) {
+        this.nome = nome;
+        this.cargo = cargo;
+        this.idade = idade;
+    }
 
     public String getNome() {
         return nome;
